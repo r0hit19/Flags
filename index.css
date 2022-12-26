@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(147, 142, 142), rgb(255, 255, 255));
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+nav h1 {
+    color: rgb(54, 52, 52);
+}
+
+.container {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.card {
+    height: 380px;
+    flex-basis: 27%;
+    margin: 30px 10px;
+    box-shadow: 3px 3px 5px 5px #eae8e8;
+    border-radius: 5px 5px 5px 5px;
+}
+
+img {
+    width: 100%;
+    height: 58%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2,
+p {
+    margin-left: 15px;
+}
+
+button {
+    top: 10px;
+    left: 90%;
+    height: 30px;
+    border-radius: 2px;
+    border-style: none;
+}
+
+button:hover {
+    background-color: rgb(45, 42, 42);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#hamburgerid {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 10px;
+    background-color: beige;
+    padding: 5px;
+    display: none;
+}
+
+.ham-burger button {
+    margin-bottom: 20px;
+}
+
+#hamburgerid button:nth-of-type(1) {
+    background-color: rgb(241, 241, 241);
+    color: rgb(84, 82, 82);
+    margin-top: 0px;
+    margin-left: 120px;
+}
+
+#sort-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 1270px) {
+    .card {
+        height: 338px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .card {
+        height: 270px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .card {
+        flex-basis: 30%;
+        height: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 623px) {
+    .card {
+        flex-basis: 45%;
+        height: 272px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .card {
+        flex-basis: 76%;
+        height: 337px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    #sort-btn {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .card {
+        flex-basis: 90%;
+        height: 370px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    #sort-btn {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .card {
+        flex-basis: 100%;
+        height: 320px;
+    }
+
+    img {
+        height: 38%;
+    }
+}

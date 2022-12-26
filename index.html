@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <nav>
+        <h1>Countries</h1>
+        <div class="nav-btn">
+            <button onclick="sortByPopulation()" class="btn">Sort by population</button>
+            <button onclick="sortByNameDesc()" class="btn">Sort by Name</button>
+            <button onclick="window.location.reload()" class="btn">Refresh</button>
+            <button onclick=" document.getElementById('hamburgerid').style.display='block';" id="sort-btn">Sort</button>
+        </div>
+    </nav>
+    <div class="ham-burger" id="hamburgerid">
+        <button onclick="document.getElementById('hamburgerid').style.display='none';">X</button>
+        <button onclick="sortByPopulation()">Sort by population</button>
+        <button onclick="sortByNameDesc()">Sort by Name</button>
+        <button onclick="window.location.reload()">Refresh</button>
+    </div>
+    <div class="container" id="cont">
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="card">
+            <img src="https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg"/>
+            <h4>Afganistan</h4>
+            <p>Population : 456856</p>
+            <p>Region : Asia</p>
+            <p>Capital : Kabul</p>
+        </div> -->
